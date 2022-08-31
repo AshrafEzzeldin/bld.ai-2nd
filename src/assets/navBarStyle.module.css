@@ -1,0 +1,109 @@
+/* /////////////////////////////////////// */
+
+.nav_css {
+  background-color: #fff;
+  width: 100%;
+}
+
+.nostyle {
+  all: unset;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.nav_alt {
+  display: none;
+}
+
+.navL {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+}
+.search {
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+.nav_form {
+  margin-right: 6px;
+}
+.search_input:focus {
+  outline: none;
+}
+.search_input {
+  /* padding: 15px 500px 15px 0px; */
+  flex-grow: 2;
+  width: 30vw;
+  height: 4vh;
+  margin-right: 20px;
+  border: none;
+}
+.search_button {
+  border: none;
+  background-color: white;
+}
+.navLi {
+  display: inline-block;
+  padding: 2px 0;
+}
+.navHover:hover {
+  color: blueviolet;
+}
+
+.black_button {
+  background-color: white;
+  padding: 14px 20px;
+  align-self: center;
+  margin: 8px 0;
+  border: 0.2px solid;
+  cursor: pointer;
+}
+
+.sign_up {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  align-self: center;
+  margin: 8px 0;
+  border: 0.2px solid;
+  cursor: pointer;
+}
+.global {
+  background-color: white;
+  padding: 14px 10px;
+  align-self: center;
+  margin: 0 10px 0 0;
+  border: 0.2px solid;
+  cursor: pointer;
+}
+
+.nav_first {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 1300px) {
+  .udemy_business {
+    display: none;
+  }
+
+  .search_input {
+    width: 9.5vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav_alt {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .list_css {
+    display: none;
+  }
+}

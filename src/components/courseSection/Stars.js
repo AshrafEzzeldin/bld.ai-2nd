@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import Icon from "./Icon";
+import Icon from "../Icon";
 
 function Stars(props) {
   let star = (x) => {

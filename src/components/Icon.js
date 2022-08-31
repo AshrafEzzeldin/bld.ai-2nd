@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IconContext } from "react-icons";
-
 const Icon = (icon, fontSize, color) => {
   return (
     <>

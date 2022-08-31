@@ -1,7 +1,8 @@
 import React from "react";
 import DrawCards from "./DrawCards";
 import PreCourse from "./PreCourse";
-import styles from "./cardStyle.module.css";
+import styles from "../../assets/cardStyle.module.css";
+
 function CourseSection(props) {
   return (
     <section className={styles.course_section}>

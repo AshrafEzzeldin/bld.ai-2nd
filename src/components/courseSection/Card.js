@@ -1,6 +1,6 @@
 import React from "react";
 import Stars from "./Stars";
-import styles from "./cardStyle.module.css";
+import styles from "../../assets/cardStyle.module.css";
 
 function Card(props) {
   return (
