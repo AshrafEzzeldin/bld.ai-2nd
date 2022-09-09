@@ -1,0 +1,83 @@
+.shift_about {
+  position: relative;
+  left: 20%;
+  width: 45%;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.float {
+  z-index: 2;
+  position: fixed;
+  display: inline-block;
+  width: 25%;
+  right: 8%;
+  background-color: white;
+  bottom: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+}
+
+.gold {
+  color: gold;
+}
+
+.play {
+  z-index: 3;
+  position: absolute;
+  left: 48%;
+  top: 45%;
+}
+
+.blueviolet {
+  background-color: rgb(172, 108, 232) !important;
+}
+
+.blueviolet:hover {
+  background-color: rgb(143, 29, 251) !important;
+}
+
+.small {
+  font-size: small;
+}
+
+.med {
+  font-size: medium;
+}
+
+@media only screen and (max-width: 1300px) {
+  .float {
+    z-index: 0;
+    position: static;
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: rgb(174, 169, 169);
+  }
+  .imageDiv {
+    margin: auto;
+    width: 50%;
+  }
+  .display {
+    display: none;
+  }
+
+  .shift_about {
+    position: static;
+    margin: auto;
+    width: 90%;
+  }
+  .right {
+    position: static;
+    display: block;
+  }
+}
