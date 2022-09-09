@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import styles from "../../assets/navBarStyle.module.css";
+import React, { useState, useContext } from "react";
+import styles from "../../assets/css/navBarStyle.module.css";
 import Icon from "../Icon";
-import { FaSearch } from "react-icons/fa";
-import { FaCartPlus } from "react-icons/fa";
-import { FaGlobe } from "react-icons/fa";
-import { FaBars } from "react-icons/fa";
+import { FaSearch, FaCartPlus, FaGlobe, FaBars } from "react-icons/fa";
+import { SearchContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 
 function Navbar(props) {
+  let navigate = useNavigate();
   let [search, setSearch] = useState("");
-
+  const searchContext = useContext(SearchContext);
   const handlechange = (event) => {
     setSearch(event.target.value);
-    props.search(event.target.value);
+    searchContext.setSearch(event.target.value);
   };
 
   return (
@@ -19,6 +19,9 @@ function Navbar(props) {
       <div className={styles.nav_alt}>
         {Icon(<FaBars />, "20px")}
         <img
+          onClick={() => {
+            navigate("./");
+          }}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png"
           alt="Udemy"
           width="91"
@@ -30,6 +33,9 @@ function Navbar(props) {
         <ul className={styles.navL}>
           <li className={[styles.navLi, styles.nav_first].join(" ")}>
             <img
+              onClick={() => {
+                navigate("./");
+              }}
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png"
               alt="Udemy"
               width="91"

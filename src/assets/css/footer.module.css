@@ -1,0 +1,21 @@
+.flow {
+  overflow: auto;
+}
+
+.z {
+  z-index: 5;
+  position: relative;
+}
+
+.display {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .display {
+    display: block;
+    position: relative;
+  }
+}

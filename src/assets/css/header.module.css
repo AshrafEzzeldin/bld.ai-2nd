@@ -40,7 +40,7 @@
     width: 100%;
     flex-wrap: wrap;
   }
-  .header-text {
+  .header_text {
     align-self: stretch;
     text-align: center;
     width: auto;

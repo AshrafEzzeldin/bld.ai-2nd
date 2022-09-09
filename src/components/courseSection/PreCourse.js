@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../assets/cardStyle.module.css";
+import styles from "../../assets/css/cardStyle.module.css";
 
 function PreCourse(props) {
   return (
